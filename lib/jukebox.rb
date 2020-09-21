@@ -48,12 +48,6 @@ def list(songs)
 end
 
 
-  i = 1
-   my_songs.each_key do |song|
-    puts "#{i}. #{song}"
-    i += 1
-  end
-
 # Play Method
 # This method also takes in an argument of the songs array. 
 # It first puts out the prompt: "Please enter a song name or number:". 

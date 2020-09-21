@@ -47,12 +47,30 @@ end
 
 
 # Play Method
-# This method also takes in an argument of the songs array. 
-# It first puts out the prompt: "Please enter a song name or number:". 
-# It then stores the user's response using gets.chomp.
-# If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>". 
-# Otherwise, it should puts out: "Invalid input, please try again".
+# This method takes in an argument of the songs array
+# It first puts out the prompt: "Please enter a song name or number:"
+# It then stores the user's response using gets.strip
+# If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>"
+# Otherwise, it should puts out: "Invalid input, please try again"
 
+can find a song when given a number from the user
+      can find a song when given a full song name
+      returns an error when given a number that does not correspond to a song
+      returns an error when given a name that does not correspond to an existing song
+
+
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  user_input = gets.strip
+  output = ""
+  songs.each_with_index do |song, index|
+    if user_input == (index + 1).to_s || user_input == song
+      output = "Playing #{song}"
+    else
+      puts "Invalid input, please try again"
+    end
+end
 
 def play(songs)
   puts "Please enter a song name or number:"
@@ -73,23 +91,7 @@ def play(songs)
   end
 end
 
-def play(songs)
-  puts "Please enter a song name or number:"
-  user_input = gets.strip
-  output = ""
-  songs.each_with_index do |song, index|
-    if user_input == (index + 1).to_s || user_input == song
-      output = "Playing #{song}"
-    else
-      puts "Invalid input, please try again"
-    end
-end
-
- can find a song when given a number from the user
-      can find a song when given a full song name
-      returns an error when given a number that does not correspond to a song
-      returns an error when given a name that does not correspond to an existing song
-
+ 
 def exit_jukebox
   puts "Goodbye."
 end

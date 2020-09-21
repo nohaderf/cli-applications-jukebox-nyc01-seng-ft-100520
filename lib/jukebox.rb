@@ -53,10 +53,10 @@ end
 # If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>"
 # Otherwise, it should puts out: "Invalid input, please try again"
 
-can find a song when given a number from the user
-      can find a song when given a full song name
-      returns an error when given a number that does not correspond to a song
-      returns an error when given a name that does not correspond to an existing song
+# can find a song when given a number from the user
+#       can find a song when given a full song name
+#       returns an error when given a number that does not correspond to a song
+#       returns an error when given a name that does not correspond to an existing song
 
 
 
@@ -70,26 +70,9 @@ def play(songs)
     else
       puts "Invalid input, please try again"
     end
-end
-
-def play(songs)
-  puts "Please enter a song name or number:"
-  user_response = gets.chomp
-  output = ""
-  songs.each_with_index { |song, index|
-    if user_response == (index + 1).to_s || user_response == song
-      output = "Playing #{song}"
-    end
-  }
-  if output.include?("Playing")
-    puts output
-  elsif user_response == "list"
-    list(songs)
-    play(songs)
-  else
-    puts "Invalid input, please try again"
   end
 end
+
 
  
 def exit_jukebox

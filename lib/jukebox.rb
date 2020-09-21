@@ -68,12 +68,12 @@ def play(songs)
     if user_input == (index + 1).to_s || user_input == song
       output = "Playing #{song}"
     end
-   if output.include?("Playing")
+    if output.include?("Playing")
       puts output
     elsif user_input == "list"
       list(songs)
       plays(songs)
-   else
+    else
       puts "Invalid input, please try again"
    end
   end

@@ -40,10 +40,19 @@ end
   # 9. Amos Lee - Keep It Loose, Keep It Tight
 
 def list(songs)
-  songs.each_with_index do |song, index|
-    puts "#{index+1}. #{song}"
+  counter = 1 
+  songs.each do |song|
+    puts "#{counter}. #{song}"
+    counter += 1
   end
 end
+
+
+  i = 1
+   my_songs.each_key do |song|
+    puts "#{i}. #{song}"
+    i += 1
+  end
 
 # Play Method
 # This method also takes in an argument of the songs array. 

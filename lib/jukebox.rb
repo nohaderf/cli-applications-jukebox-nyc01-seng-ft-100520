@@ -18,6 +18,14 @@ def help
   puts "- exit : exits this program"
 end
 
+def list(songs)
+  counter = 1
+  songs.each_with_index do |song|
+    puts "#{counter}. song"
+    counter += 1
+  end
+end
+
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
@@ -28,10 +36,7 @@ def play(songs)
     end
 end
 
-def list(songs)
-  counter = 1
-  songs.each_with_index do |song|
-    puts "#{counter}. song"
-    counter += 1
-  end
+def exit_jukebox
+  puts "Goodbye."
 end
+

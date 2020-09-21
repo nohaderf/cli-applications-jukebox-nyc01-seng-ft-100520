@@ -57,6 +57,8 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
+  output = ""
+  songs.each_with_index do |song, index|
     if user_input == songs.any? || songs[gets.strip]
       puts "Playing #{user_input}"
     else
@@ -65,7 +67,7 @@ def play(songs)
 end
 
 
-ef play(songs)
+def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.chomp
   output = ""

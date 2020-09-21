@@ -19,5 +19,5 @@ def help
 end
 
 def list(songs)
-  Array#each_with_index
+  songs.each_with_index
 end

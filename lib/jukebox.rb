@@ -10,6 +10,14 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+# THE HELP METHOD
+# This method should puts out the following:
+  # I accept the following commands:
+  # - help : displays this help message
+  # - list : displays a list of songs you can play
+  # - play : lets you choose a song to play
+  # - exit : exits this program
+  
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"

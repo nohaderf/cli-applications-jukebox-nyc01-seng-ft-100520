@@ -65,9 +65,6 @@ def play(songs)
   end
   if output.include?("Playing")
     puts output
-  elsif user_input == "list"
-    list(songs)
-    plays(songs)
   else
     puts "Invalid input, please try again"
   end

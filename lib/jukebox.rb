@@ -55,7 +55,14 @@ end
 
 def method(songs)
   puts "Please enter a song name or number:"
-  
+  user_input = gets.strip
+  output = ""
+  songs.each_with_index do |song, index|
+    if user_input = (index + 1).to_s || user_input = song
+      output = "Playing #{song}"
+    end
+  end
+  if 
 end
 
 def exit_jukebox

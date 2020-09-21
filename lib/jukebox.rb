@@ -21,7 +21,7 @@ end
 def list(songs)
   song_index = []
   songs.each_with_index do |song|
-    puts "#{counter}. song"
+    song_index << song
   end
   song_index
 end

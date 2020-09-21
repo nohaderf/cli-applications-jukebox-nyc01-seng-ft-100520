@@ -67,9 +67,34 @@ def play(songs)
   songs.each_with_index do |song, index|
     if user_input == (index + 1).to_s || user_input == song
       output = "Playing #{song}"
+
+    end
+    if output.include?("Playing")
+      puts output
+    elsif user_input == "list"
+      list(songs)
+      plays(songs)
     else
       puts "Invalid input, please try again"
+  end
+end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  user_response = gets.chomp
+  output = ""
+  songs.each_with_index { |song, index|
+    if user_response == (index + 1).to_s || user_response == song
+      output = "Playing #{song}"
     end
+  }
+  if output.include?("Playing")
+    puts output
+  elsif user_response == "list"
+    list(songs)
+    play(songs)
+  else
+    puts "Invalid input, please try again"
   end
 end
 

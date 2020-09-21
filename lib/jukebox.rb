@@ -22,4 +22,5 @@ def list(songs)
   songs_index = [ ]
   index = songs.each_with_index
   songs_index << index
+  song_index
 end

@@ -10,7 +10,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-# THE HELP METHOD
+# Help Methods
 # This method should puts out the following:
   # I accept the following commands:
   # - help : displays this help message
@@ -26,7 +26,7 @@ def help
   puts "- exit : exits this program"
 end
 
-# THE LIST METHOD
+# List Method
 # This method takes in an argument of the songs array of puts out the following:
 
   # 1. Phoenix - 1901
@@ -44,6 +44,14 @@ def list(songs)
     puts "#{index+1}. #{song}"
   end
 end
+
+# Play Method
+# This method also takes in an argument of the songs array. 
+# It first puts out the prompt: "Please enter a song name or number:". 
+# It then stores the user's response using gets.chomp.
+# If the user's response is a valid song number or song name, 
+  # the method should puts out: "Playing <song name>". 
+# Otherwise, it should puts out: "Invalid input, please try again".
 
 def play(songs)
   puts "Please enter a song name or number:"

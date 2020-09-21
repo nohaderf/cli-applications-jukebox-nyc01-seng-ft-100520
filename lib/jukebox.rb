@@ -19,7 +19,7 @@ def help
 end
 
 def list(songs)
-  counter = 1
+  song_index = []
   songs.each_with_index do |song|
     puts "#{counter}. song"
     counter += 1

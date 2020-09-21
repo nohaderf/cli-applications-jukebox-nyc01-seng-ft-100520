@@ -85,7 +85,10 @@ def play(songs)
     end
 end
 
-
+ can find a song when given a number from the user
+      can find a song when given a full song name
+      returns an error when given a number that does not correspond to a song
+      returns an error when given a name that does not correspond to an existing song
 
 def exit_jukebox
   puts "Goodbye."

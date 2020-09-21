@@ -64,6 +64,18 @@ def play(songs)
     end
 end
 
+
+puts "Please enter a song name:"
+  input = gets.chomp
+  my_songs.each_key do |song|
+    if input == song.downcase
+      system "open " + my_songs[song]
+      break
+    end 
+
+  end
+end
+
 def exit_jukebox
   puts "Goodbye."
 end

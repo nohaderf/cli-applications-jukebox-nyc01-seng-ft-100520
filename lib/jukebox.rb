@@ -75,7 +75,7 @@ def play(songs)
     list(songs)
     plays(songs)
   else
-    puts "Invalid input, please try again"d
+    puts "Invalid input, please try again"
   end
 end
 

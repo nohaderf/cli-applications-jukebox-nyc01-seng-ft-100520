@@ -89,7 +89,6 @@ def run
     help
   elsif user_input == list
     list
-    
   elsif user_input == play
   
   end

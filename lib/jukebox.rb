@@ -82,15 +82,15 @@ end
 # Second, call one of the four methods we've written, based on the user input. 
 # Use a loop to run the program until the user chooses "exit"
 
-def run
+def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
   if user_input == help
     help
   elsif user_input == list
-    list
+    list(songs)
   elsif user_input == play
-    play
+    play(songs)
   end
   run
   if user_input == exit

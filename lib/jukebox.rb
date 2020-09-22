@@ -83,5 +83,5 @@ end
 # Use a loop to run the program until the user chooses "exit"
 
 def run
-  puts "Please enter a"
+  puts "Please enter a command:"
 

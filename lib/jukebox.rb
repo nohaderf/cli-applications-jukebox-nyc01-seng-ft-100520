@@ -92,7 +92,7 @@ def run
   elsif user_input == play
     play
   end
-  run
+run
   if user_input == exit
     exit_jukebox
   end

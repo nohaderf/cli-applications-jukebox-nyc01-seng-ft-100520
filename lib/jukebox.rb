@@ -77,13 +77,11 @@ def exit_jukebox
 end
 
 # Run Method
-# First, run should puts out the prompt: "Please enter a command:". Just like play, we will need to capture user input using gets and strip (you can also use chomp, but this will only remove carriage return characters, not extra whitespaces).
+# First, puts out the prompt: "Please enter a command:". 
+# Just like play, we will need to capture user input using gets and strip 
+# Second, call one of the four methods we've written, based on the user input. 
+# Use a loop to run the program until the user chooses "exit"
 
-# Second, the run method will need to call one of the four methods we've written, based on the user input. For example, if the input is "exit", we would want to call the exit_jukebox method.
-
-# Now here is the tricky part. We've provided a way for a user to exit the program because ideally, we actually want the program to run until the user decides to exit. We need a way to keep our program running as long as the user's input is not "exit". For this, we can use a loop!
-
-# A loop can be used to contain the process of capturing user input then deciding what to do with it. If this is contained within a loop, as long as the loop conditions are met, the user will be able to enter commands over and over.
-
-# Use if or case statements to determine how your program will respond to a user's input. For example, if their input is "list", call the list method if their input is "play", call the play method if their input is "help", call the help method and if their input is "exit", call the exit_jukebox method and break out of your loop to stop the program.
+def run
+  puts "Please enter a"
 

@@ -10,7 +10,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-# Help Methods
+# Help Method
 # This method should puts out the following:
   # I accept the following commands:
   # - help : displays this help message
@@ -69,6 +69,8 @@ def play(songs)
   end
 end
 
+# exit_jukebox method
+# puts out: "Goodbye".
 
 def exit_jukebox
   puts "Goodbye."

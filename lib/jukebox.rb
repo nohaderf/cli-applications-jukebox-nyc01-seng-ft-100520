@@ -62,7 +62,11 @@ def method(songs)
       output = "Playing #{song}"
     end
   end
-  if 
+  if songs.include?("playing")
+    puts output
+  else
+    puts "Invalid input, please try again"
+  end
 end
 
 def exit_jukebox

@@ -53,6 +53,7 @@ end
 # If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>"
 # Otherwise, it should puts out: "Invalid input, please try again"
 
+
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
@@ -62,12 +63,13 @@ def play(songs)
       output = "Playing #{song}"
     end
   end
-  if output.include?("playing")
+  if output.include?("Playing")
     puts output
   else
     puts "Invalid input, please try again"
   end
 end
+
 
 def exit_jukebox
   puts "Goodbye."

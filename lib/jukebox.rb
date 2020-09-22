@@ -90,7 +90,7 @@ def run
   elsif user_input == list
     list
   elsif user_input == play
-  
+    play
   end
   run
 end

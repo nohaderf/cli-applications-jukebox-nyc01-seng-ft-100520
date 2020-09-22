@@ -94,9 +94,9 @@ def run(songs)
     elsif user_input == "play"
       play(songs)  
     end
+  break
   end
   if user_input == "exit"
     exit_jukebox
-    break
   end
 end

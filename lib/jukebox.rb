@@ -62,12 +62,14 @@ def play(songs)
       output = "Playing #{song}"
     end
   end
-  if songs.include?("playing")
+  if output.include?("playing")
     puts output
   else
     puts "Invalid input, please try again"
   end
 end
+
+
 
 def exit_jukebox
   puts "Goodbye."

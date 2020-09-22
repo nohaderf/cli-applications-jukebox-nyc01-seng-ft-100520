@@ -82,25 +82,7 @@ end
 # Second, call one of the four methods we've written, based on the user input. 
 # Use a loop to run the program until the user chooses "exit"
 
-def run(songs)
-  puts "Please enter a command:"
-  user_input = gets.strip
-  while user_input != "exit"
-    if user_input == "help"
-      help
-    elsif user_input == "list"
-      list(songs)
-    elsif user_input == "play"
-      play(songs)
-    end
-  end
-  run(songs)
-  while user_input == "exit"
-  if user_input == "exit"
-    exit_jukebox
-  end
-  end
-end
+
 
 
 def run(songs)
